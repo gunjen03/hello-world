@@ -23,6 +23,14 @@ pipeline {
                 sh ('mvn install') 
             }
         }
+        stage ("mvn install") {
+            steps {
+                sshagent(['tomcat']) {
+                 sh  "scp -o StrictHostKeyChecking webapp/target/webapp.war ec2-user@44.195.31.102:/usr/share/tomcat/webapps"
+    // some block
+}
+            }
+        }
 
         
         
