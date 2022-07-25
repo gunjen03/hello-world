@@ -4,12 +4,12 @@ pipeline {
     agent any
 
     environment {
-        AWS_ACCESS_KEY_ID     = credentials('aws-creds')
+        PATH     = "/opt/maven/bin:$PATH"
     }
 
-    parameters {
-        booleanParam(defaultValue: false, description: 'Set Value to True to Initiate Destroy Stage', name: 'destroy')
-    }
+    // parameters {
+    //     booleanParam(defaultValue: false, description: 'Set Value to True to Initiate Destroy Stage', name: 'destroy')
+    // }
 
     stages {
         
