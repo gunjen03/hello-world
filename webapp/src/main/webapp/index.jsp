@@ -31,7 +31,7 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <h1> CICD Pipeline maven tomcat deployments </h1>
+   <h1> CICD Pipeline maven tomcat deployment </h1>
 
   
 </form>
